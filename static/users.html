@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+        <meta name="description" content="APP Web Task 5">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    </head>
+
+    <body >
+    <header ><h2>APP Single Page App</h2></header>
+    <div >
+            <section id="sectUsers" >
+                <div >
+                    <h2 >Users</h2>
+                    <div id="divPageNumber">Page <span id="pageNumber">1</span> of <span id="totalPages">3</span></div>
+                    <button  id="btnPrevious" >Previous</button>
+                    <button  id="btnNext" >Next</button>
+                    <table id="tblUsers" >
+                        <tbody id = "tbody" onclick="getRow()">
+                            <tr  id="tblUserHeader">
+                            <th>User ID</th>
+                            <th>Email</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Avatar</th>
+                            </tr>
+                            <tr  id="user1">
+                                <td >1</td>
+                                <td >george.bluth@reqres.in</td>
+                                <td >George</td>
+                                <td >Bluth</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" alt="avatar"></td>
+                            </tr>
+                            <tr  id="user2">
+                                <td >2</td>
+                                <td >janet.weaver@reqres.in</td>
+                                <td >Janet</td>
+                                <td >Weaver</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg" alt="avatar"></td>
+                            </tr>
+                            <tr  id="user3">
+                                <td >3</td>
+                                <td >emma.wong@reqres.in</td>
+                                <td >Emma</td>
+                                <td >Wong</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg" alt="avatar"></td>
+                            </tr>
+                            <tr id="user4" >
+                                <td >4</td>
+                                <td >eve.holt@reqres.in</td>
+                                <td >Eve</td>
+                                <td >Holt</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg" alt="avatar"></td>
+                            </tr>
+                            <tr  id="user5">
+                                <td >5</td>
+                                <td >charles.morris@reqres.in</td>
+                                <td >Charles</td>
+                                <td >Morris</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg" alt="avatar"></td>
+                            </tr>
+                            <tr  id="user6">
+                                <td >6</td>
+                                <td >tracey.ramos@reqres.in</td>
+                                <td >Tracey</td>
+                                <td >Ramos</td>
+                                <td ><img src="https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg" alt="avatar"></td>
+                            </tr>
+                        </tbody></table>
+                </div>
+            </section>
+            <section id="sectUser" >
+                <div >
+                    <h2 >User</h2>
+                    <div >
+                        <img id="userAvatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" alt="avatar">
+                        <form id="frmUser" >
+                            <label>User ID:</label>
+                            <input type="text" id="userID" value="1"><br>
+                            <label>Email:</label>
+                            <input type="text" id="userEmail" value="george.bluth@reqres.in" ><br>
+                            <label>First Name:</label>
+                            <input type="text" id="userFirstName" value="George"><br>
+                            <label>Last Name:</label>
+                            <input type="text" id="userLastName" value="Bluth">
+                            <div >
+                                <button type="button" id="btnSaveUser" >Save Changes</button>
+                                <button type="button" id="btnDeleteUser" >Delete User</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="sectNewUser" >
+                <div >
+                    <h2 >New User</h2>
+                    <div >
+                        <form id="frmNewUser">
+                            <label>Email:</label>
+                            <input type="text" id="newUserEmail" value="test@test.com" ><br>
+                            <label>First Name:</label>
+                            <input type="text" id="newUserFirstName" value="test"><br>
+                            <label>Last Name:</label>
+                            <input type="text" id="newUserLastName" value="test"><br>
+                            <label>User Image Url:</label>
+                            <input type="text" id="newUserImage" value="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/user-male-icon.png">
+                            <div>
+                                <button type="button" id="btnNewUser">New User</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <script src="js/users.js"></script>
+    </body>
+</html>
